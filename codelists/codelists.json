@@ -1,3 +1,16 @@
 {
-  "files": {}
+  "files": {
+    "opensafely-covid-identification-in-primary-care-probable-covid-positive-test.csv": {
+      "id": "opensafely/covid-identification-in-primary-care-probable-covid-positive-test/2020-07-16",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/covid-identification-in-primary-care-probable-covid-positive-test/2020-07-16/",
+      "downloaded_at": "2021-12-13 10:47:43.459983Z",
+      "sha": "563b536aaf850da011233653e91e10030a5bc15f"
+    },
+    "opensafely-nice-managing-the-long-term-effects-of-covid-19.csv": {
+      "id": "opensafely/nice-managing-the-long-term-effects-of-covid-19/64f1ae69",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/nice-managing-the-long-term-effects-of-covid-19/64f1ae69/",
+      "downloaded_at": "2021-12-13 10:47:43.758220Z",
+      "sha": "8ba3006b5e3d054bbc6ed1861d08fdc682a52a31"
+    }
+  }
 }

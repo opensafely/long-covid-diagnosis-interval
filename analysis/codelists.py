@@ -5,5 +5,5 @@ covid_codes = codelist_from_csv(
 )
 
 long_covid_codes = codelist_from_csv(
-    "codelists/opensafely-nice-managing-the-long-term-effects-of-covid-19-64f1ae69.csv", system="snomed", column="code"
+    "codelists/opensafely-nice-managing-the-long-term-effects-of-covid-19.csv", system="snomed", column="code"
 )
