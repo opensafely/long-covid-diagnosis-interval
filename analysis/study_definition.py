@@ -13,8 +13,8 @@ study = StudyDefinition(
     index_date="2019-12-01",
     population=patients.satisfying(
         "has_covid AND has_long_covid",
-        has_covid=patients.with_these_clinical_events(covid_codes),
-        has_long_covid=patients.with_these_clinical_events(long_covid_codes),
+        has_covid=patients.with_these_clinical_events(covid_codes, between=[start_date, end_date],),
+        has_long_covid=patients.with_these_clinical_events(long_covid_codes, between=[start_date, end_date],),
     ),
 
     covid_date=patients.with_these_clinical_events(
@@ -32,5 +32,14 @@ study = StudyDefinition(
         date_format="YYYY-MM-DD",
         find_first_match_in_period=True,
         return_expectations={"rate": "uniform", "incidence": 1.0, "date": {"earliest": start_date, "latest": end_date}},
+    ),
+
+    age=patients.age_as_of(
+        "covid_date", 
+        return_expectations={"rate" : "universal", "int" : {"distribution" : "population_ages"}},
+    ),
+
+    sex=patients.sex(
+        return_expectations={"rate": "universal", "category": {"ratios": {"M": 0.5, "F": 0.5}}},
     ),
 )
