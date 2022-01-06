@@ -16,4 +16,5 @@ actions:
     needs: [generate_study_population]
     outputs:
       moderately_sensitive:
-        cohort: output/histogram.jpg
+        gender_figure: output/gender.jpg
+        age_figure: output/age.jpg
