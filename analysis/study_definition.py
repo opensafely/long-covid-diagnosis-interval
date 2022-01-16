@@ -19,6 +19,7 @@ study = StudyDefinition(
 
     covid_date=patients.with_these_clinical_events(
         covid_codes,
+        between=[start_date, end_date],
         returning="date",
         date_format="YYYY-MM-DD",
         find_first_match_in_period=True,
