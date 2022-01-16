@@ -16,5 +16,10 @@ actions:
     needs: [generate_study_population]
     outputs:
       moderately_sensitive:
+        all_figure: output/all.jpg
         gender_figure: output/gender.jpg
         age_figure: output/age.jpg
+        ethnicity_figure: output/ethnicity.jpg
+        imd_figure: output/imd.jpg
+        region_figure: output/region.jpg
+        wave_figure: output/wave.jpg
