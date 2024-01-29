@@ -1,4 +1,4 @@
-# $long-covid-diagnosis-interval
+# long-covid-diagnosis-interval
 
 [View on OpenSAFELY](https://jobs.opensafely.org/long-covid-diagnosis-interval/long-covid-diagnosis-interval/)
 
